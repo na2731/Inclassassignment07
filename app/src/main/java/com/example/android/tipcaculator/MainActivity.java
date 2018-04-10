@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +27,14 @@ public class MainActivity extends AppCompatActivity {
         EditText Tip=(EditText)findViewById(R.id.editText3);
         double tip= Double.parseDouble(Tip.getText().toString());
 
-        Receipt a=new Receipt(total,saletax,tip);
+        EditText name=(EditText)findViewById(R.id.editText3);
+        String Name=(name.getText().toString());
+
+        CheckBox pack=(CheckBox) findViewById(R.id.ii);
+        boolean P= pack.isChecked();
+
+
+        Receipt a=new Receipt(Name,total,saletax,tip,P);
         i.putExtra("MyClass",a);
 
         startActivity(i);

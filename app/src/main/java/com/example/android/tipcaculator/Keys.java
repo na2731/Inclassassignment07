@@ -5,6 +5,8 @@ package com.example.android.tipcaculator;
  */
 
 public interface Keys {
+    String NAME="Name of Goods";
+    String PACK="Pack?";
     String TOTAL="Total: ";
     String SALETAX="Sales Tax: ";
     String TIP="Tip: ";

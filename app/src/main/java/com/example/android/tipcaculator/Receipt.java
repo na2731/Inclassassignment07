@@ -10,11 +10,46 @@ public class Receipt implements Serializable {
     private double Total;
     private double SaleTax;
     private double Tip;
+    private boolean Pack;
+    private String name;
 
-    public Receipt(double Total,double SaleTax, double Tip){
+    public void setTotal(double total) {
+        Total = total;
+    }
+
+    public void setSaleTax(double saleTax) {
+        SaleTax = saleTax;
+    }
+
+    public void setTip(double tip) {
+        Tip = tip;
+    }
+
+    public void setPack(boolean pack) {
+        Pack = pack;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+
+    public Receipt(String name, double Total,double SaleTax, double Tip, boolean Pack){
         this.Total=Total;
         this.SaleTax=SaleTax;
         this.Tip=Tip;
+        this.Pack=Pack;
+        this.name=name;
+    }
+
+
+    public boolean isPack() {
+        return Pack;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public double getTotal(){return Total;}

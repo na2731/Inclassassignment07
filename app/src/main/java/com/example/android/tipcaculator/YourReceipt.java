@@ -22,6 +22,6 @@ public class YourReceipt extends AppCompatActivity {
     public void display (Receipt a){
         TextView textView=(TextView)findViewById(R.id.textView);
         double grandtotal=a.getTotal()+a.getTip()+a.getSaleTax();
-        textView.setText(Keys.TOTAL+a.getTotal()+'\n'+Keys.SALETAX+a.getSaleTax()+'\n'+Keys.TIP+a.getTip()+'\n'+Keys.GRANDTOTAL+grandtotal);
+        textView.setText(Keys.NAME+a.getName()+Keys.TOTAL+a.getTotal()+'\n'+Keys.SALETAX+a.getSaleTax()+'\n'+Keys.TIP+a.getTip()+'\n'+Keys.PACK+a.isPack()+'\n'+Keys.GRANDTOTAL+grandtotal);
     }
 }

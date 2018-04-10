@@ -12,6 +12,12 @@
     android:orientation="vertical">
 
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:hint="Name of Goods"/>
+    <EditText
         android:id="@+id/editText"
         android:hint="Total"
         android:layout_width="match_parent"
@@ -37,6 +43,12 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:hint="Tip Percentage" />
+
+    <CheckBox
+        android:id="@+id/ii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pack"/>
     
     <Button
         android:onClick="openAnotherActivity"
@@ -44,6 +56,17 @@
         android:layout_height="wrap_content"
         android:text="SUBMIT"
         android:layout_margin="13dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chi"/>
+
+    </ScrollView>
 </LinearLayout>
 
 
